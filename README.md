@@ -29,6 +29,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/Screenshot%202022-04-03%20at%2016-25-14%20Frontend%20Mentor%20Interactive%20rating%20component.png)
+![](./images/Screenshot%202022-04-03%20at%2016-49-38%20Frontend%20Mentor%20Interactive%20rating%20component.png)
 
 ### Links
 
