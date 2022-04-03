@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/louisenorrsen/interactive-rating-component-main)
-- Live Site URL: [](https://louisenorrsen.github.io/interactive-rating-component-main/)
+- Solution URL: [Solution](https://github.com/louisenorrsen/interactive-rating-component-main)
+- Live Site URL: [Live Site](https://louisenorrsen.github.io/interactive-rating-component-main/)
 
 ## My process
 
