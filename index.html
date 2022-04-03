@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./reset.css">
+  <script src="./script.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive rating component</title>
@@ -12,7 +13,7 @@
 <body>
   <main>
     <!-- Rating state start -->
-    <div class="ratingState">
+    <div id="ratingState" class="ratingState">
 
       <div class="circle">
         <img src="./images/icon-star.svg" alt="icon-star">
@@ -21,20 +22,24 @@
       <h1 class="title">How did we do?</h1>
       <p class="text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       <div class="rating-container">
-        <button id="one" class="rating">1</button>
-        <button id="two" class="rating">2</button>
-        <button id="tree" class="rating">3</button>
-        <button id="four" class="rating">4</button>
-        <button id="five" class="rating">5</button>
+        <button class="rating">1</button>
+        <button class="rating">2</button>
+        <button class="rating">3</button>
+        <button class="rating">4</button>
+        <button class="rating">5</button>
       </div>
-      <button class="submit">Submit</button>
+      <button id="submit" class="submit">Submit</button>
     </div>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="thankYouState">
+    <div id="thankYouState" class="thankYouState">
       <img src="./images/illustration-thank-you.svg" alt="illustration-thank-you">
-      <div class="userRating">You selected<span id="ratingResult"><!-- Add rating here --></span> out of 5</div>
+      <div class="userRating">
+        You selected
+        <span id="ratingResult"></span> 
+        out of 5
+      </div>
       <h2 class="title">Thank you!</h2>
 
       <p class="text">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>

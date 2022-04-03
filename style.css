@@ -17,7 +17,6 @@ body {
     place-content: center;
     place-items: center;
     height: 100vh;
-    
 }
 
 .ratingState,
@@ -30,6 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
+    box-sizing: border-box;
 }
 
 .circle {
@@ -73,6 +73,17 @@ body {
     border-radius: 50%;
     font-size: 14px;
     line-height: 24px;
+    cursor: pointer;
+}
+
+.rating:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.rating:focus {
+    background-color: var(--medium-grey);
+    color: var(--white);
 }
 
 .rating-container {
@@ -81,8 +92,29 @@ body {
     gap: 18px;
 }
 
+.submit {
+    background-color: var(--orange);
+    border: none;
+    color: var(--white);
+    padding: 12px;
+    border-radius: 22.5px;
+    text-transform: uppercase;
+    font-family: var(--overpass);
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
 .thankYouState {
-    /* display: none; */
+    display: none;
     text-align: center;
     padding: 34px 24px 37px 24px;
 }
@@ -98,18 +130,69 @@ body {
     font-family: var(--overpass);
     font-size: 14px;
     line-height: 22px;
-    margin: 29px;
+    margin: 29px auto;
     background-color: var(--dark-blue);
-    padding: 5px 12px;
     border-radius: 22.5px;
+    padding: 5px 12px;
+    width: max-content;
 }
 
 .attribution { 
     font-size: 12px; 
     text-align: center;
-    color: var(--light-grey); 
+    color: var(--light-grey);
+    position: absolute;
+    bottom: 1em;
 }
 
 .attribution a { 
     color: var(--orange); 
+}
+
+@media only screen and (min-width: 1440px) {
+    .ratingState,
+    .thankYouState {
+        width: 412px;
+        padding: 32px;
+    }
+
+    .circle {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 30px;
+    }
+
+    .circle img {
+        width: 16.75px;
+        height: 16px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .text {
+        margin-top: 0.938rem;
+        font-size: 15px;
+    }
+
+    .rating-container {
+        margin-bottom: 32px;
+    }
+
+    .rating {
+        width: 51px;
+        height: 51px;
+    }
+
+    .thankYouState img {
+        width: 162px;
+    }
+
+    .userRating {
+        margin: 32px auto;
+        font-size: 15px;
+        line-height: 24px;
+        padding: 4px 20px;
+    }
 }
